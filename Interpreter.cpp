@@ -54,7 +54,7 @@ namespace Chip8
 
         uint8_t framerate = 60;
 
-        for (int i = 0; i < 1000; i++) {
+        while (true) {
             this->cpu->ExecuteCycle();
 
             uint8_t dt = this->cpu->ReadDelayTimer();
